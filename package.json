@@ -1,0 +1,51 @@
+{
+  "name": "DSS-ui-automation",
+  "version": "1.0.0",
+  "description": "Self service UI Automation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://muttanaa@bitbucket.service.anz/scm/~muttanaa/self-service-ui-e2e.git"
+  },
+  "engines": {
+    "npm": ">=5",
+    "node": ">=6"
+  },
+  "author": "ANZ DSS2 Eng Dev",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "cucumber": "4.0.0",
+    "lodash": "^4.17.21",
+    "moment": "2.18.1",
+    "multiple-cucumber-html-reporter": "1.11.4",
+    "puppeteer": "^3.1.0"
+  },
+  "scripts": {
+    "start_qa_linux": "npm run report:clean && export NODE_ENV=e2e &&cucumber-js features -f json:reports/cucumber_report.json --runInBand",
+    "start_qa_windows": "npm run report:clean && set NODE_ENV=e2e2&& cucumber-js ./features/aswPendingStatus.feature -f json:reports/cucumber_report.json",
+    "report:clean": "rimraf ./reports/cucumber_report.* && rimraf ./reports/downloads/* ",
+    "start": "npm run report:clean && cucumber-js features -f json:reports/cucumber_report.json",
+    "start:parallel": "npm run report:clean && cucumber-js features -f json:reports/cucumber_report.json --parallel",
+    "feature": "npm run report:clean && cucumber-js $scenario -f json:reports/cucumber_report.json",
+    "scenario": "npm run report:clean && cucumber-js -f json:reports/cucumber_report.json --name ",
+    "tags_sit": "npm run report:clean && set NODE_ENV=e2e&& cucumber-js -f json:reports/cucumber_report.json --tags ",
+    "tags_sit_jenkins": "npm run report:clean && export NODE_ENV=e2e&& cucumber-js -f json:reports/cucumber_report.json --tags",
+    "tags_sit_asw": "npm run report:clean && set NODE_ENV=e2e&& cucumber-js ./features/asw-dss-e2e/*.feature -f json:reports/cucumber_report.json --tags ",
+    "tags_local": "npm run report:clean && set NODE_ENV=local&& cucumber-js -f json:reports/cucumber_report.json --tags ",
+    "tags_sit_serv": "npm run report:clean && NODE_ENV=e2e2 cucumber-js -f json:reports/cucumber_report.json --tags ",
+    "tags_mock_jenkins": "npm run report:clean && export NODE_ENV=mock&& cucumber-js -f json:reports/cucumber_report.json --tags ",
+    "tags_mock": "npm run report:clean && set NODE_ENV=mock&& cucumber-js -f json:reports/cucumber_report.json --tags ",
+    "report": "rimraf st-coverage && node reports/generate.js",
+    "zipReport": "tar -cJf reports/cucumber_report.json.xz reports/cucumber_report.json",
+    "genReport": "tar -xf reports/cucumber_report.json.xz -C ./ && npm run report",
+    "server": "node server.js"
+  },
+  "dependencies": {
+    "connect": "^3.6.6",
+    "es5-ext": "^0.10.53",
+    "node-fetch": "^2.6.0",
+    "node-rest-client": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "serve-static": "^1.13.2",
+    "shelljs": "^0.8.4"
+  }
+}

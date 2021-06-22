@@ -1,0 +1,9 @@
+[1125/200714.709:ERROR:process_reader_win.cc(90)] NtQuerySystemInformation: {Not Enough Quota} Not enough virtual memory or paging file quota is available to complete the specified operation. (0xc0000017)
+[1125/200714.714:ERROR:exception_snapshot_win.cc(88)] thread ID 25324 not found in process
+[1125/200714.781:ERROR:process_reader_win.cc(90)] NtQuerySystemInformation: {Not Enough Quota} Not enough virtual memory or paging file quota is available to complete the specified operation. (0xc0000017)
+[1125/200714.782:ERROR:exception_snapshot_win.cc(88)] thread ID 24280 not found in process
+[1125/200719.908:ERROR:process_reader_win.cc(90)] NtQuerySystemInformation: {Not Enough Quota} Not enough virtual memory or paging file quota is available to complete the specified operation. (0xc0000017)
+[1125/200719.931:ERROR:exception_snapshot_win.cc(88)] thread ID 37244 not found in process
+[1125/200840.928:ERROR:crashpad_client_win.cc(508)] CreateProcess: Insufficient system resources exist to complete the requested service. (0x5AA)
+[1125/200841.909:ERROR:crashpad_client_win.cc(508)] CreateProcess: Insufficient system resources exist to complete the requested service. (0x5AA)
+[1126/003057.062:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports

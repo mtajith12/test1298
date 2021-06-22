@@ -1,0 +1,65 @@
+{
+    "E2E": {
+        "Password": {
+            "AUTODSS4": "Secure123",
+            "AUTODSS5": "Secure125",
+            "AUTODSS6": "Secure123",
+            "AUTODSS7": "Secure123",
+            "AUTODSS8": "Secure123",
+            "AUTODSS9": "Secure123",
+            "DSSUSR4":"Secure127"
+        },
+        "Token": {
+            "AUTODSS7": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8513974OTPPINH/otp/tst1",
+            "AUTODSS8": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8513975OTPPINH/otp/tst1",
+            "AUTODSS9": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8513976OTPPINH/otp/tst1"
+        }
+    },
+    "E2E2": {
+        "Password": {
+            "AUTODSS4": "Secure123",
+            "AUTODSS5": "Secure128",
+            "AUTODSS6": "Secure125",
+            "AUTODSS7": "Secure125",
+            "AUTODSS8": "Secure125",
+            "AUTODSS9": "Secure125"         
+        },
+        "Token": {
+            "AUTODSS7": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8513971OTPPINH/otp/ptnc",
+            "AUTODSS8": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8513972OTPPINH/otp/ptnc",
+            "AUTODSS9": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8513973OTPPINH/otp/ptnc"
+        }
+    },
+    "E2E4": {
+        "Password": {
+            "AUTODSS4": "Secure126",
+            "AUTODSS5": "Secure1234",
+            "AUTODSS6": "Secure124",
+            "AUTODSS7": "Secure124",
+            "AUTODSS8": "Secure124",
+            "AUTODSS9": "Secure124"
+           
+        },
+        "Token": {
+            "AUTODSS7": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8514074OTPPINH/otp/etea",
+            "AUTODSS8": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8514075OTPPINH/otp/etea",
+            "AUTODSS9": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8514076OTPPINH/otp/etea"
+        }
+    },
+    "DRH": {
+        "Password": {
+            "AUTODSS4": "Secure123",
+            "AUTODSS5": "Secure128",
+            "AUTODSS6": "Secure126",
+            "AUTODSS7": "Secure128",
+            "AUTODSS8": "Secure125",
+            "AUTODSS9": "Secure125"
+           
+        },
+        "Token": {
+            "AUTODSS7": "http://10.54.10.203:8080/tokenrestapi/token/VDP8514342OTPPINH/otp/qa",
+            "AUTODSS8": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8514075OTPPINH/otp/etea",
+            "AUTODSS9": "http://appau201melm003.ecorptst.anz.com:9080/token/VDP8514076OTPPINH/otp/etea"
+        }
+    }
+}

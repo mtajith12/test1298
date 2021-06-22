@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.puppeteer-chrome-linux-rhel
+      args:
+        HTTP_PROXY: ${http_proxy}
+        HTTPS_PROXY: ${http_proxy}
+        http_proxy: ${http_proxy}
+        https_proxy: ${http_proxy}
+    image: ${DOCKER_REGISTRY_PUSH}/puppeteer-chrome-linux-rhel:${PUPPETEER_CHROME_LINUX_IMAGE_VERSION}
+    env_file: .env
