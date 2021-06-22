@@ -1,4 +1,4 @@
-# Digital Self Service Automation
+# xxxxxxxxxxx
 
 ##### Table of Contents
 
@@ -11,7 +11,7 @@
 <!-- tocstop -->
 
 ### Overview
-Digital Self Service Automation Project - will be used to Test ST of Digital Self Service UI Project only
+xxxxxxxxxx Project - will be used to Test ST of Digital Self Service UI Project only
 
 ### For-development
 after checkout the project, do following to run the project locally
